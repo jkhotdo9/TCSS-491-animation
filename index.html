@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Game Project Title Goes Here</title>
+
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            background: black; 
+            font-family: Arial, sans-serif;
+        }
+
+        canvas {
+            display: block;
+            width: 100vw;
+            height: 600px;
+            background: black;
+            border: 1px solid black;
+        }
+
+
+        #controls {
+            width: 100vw;
+            min-height: 180px;        
+            background: black;
+            color: white;
+            padding: 24px 32px;
+            box-sizing: border-box;
+            font-size: 22px;
+            line-height: 1.6;
+        }
+
+        #controls .title {
+            font-weight: 700;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+
+        #controls .hint {
+            opacity: 0.9;
+        }
+    </style>
+
+    <script type="text/javascript" src="./assetmanager.js"></script>
+    <script type="text/javascript" src="./timer.js"></script>
+    <script type="text/javascript" src="./gameengine.js"></script>
+    <script type="text/javascript" src="./util.js"></script>
+    <script type="text/javascript" src="./animator.js"></script>
+    <script src="./background.js"></script>
+    <script type="text/javascript" src="./deidara.js"></script>
+    <script type="text/javascript" src="./main.js"></script>
+</head>
+
+<body>
+    <canvas id="gameWorld" tabindex="0" autofocus></canvas>
+
+
+    <div id="controls">
+        <div class="title">Controls</div>
+        <div class="hint">Arrow Keys: Move left / right</div>
+        <div class="hint">Space: Jump</div>
+        <div class="hint">Shift: Dash (hold to keep dashing)</div>
+    </div>
+</body>
+</html>
